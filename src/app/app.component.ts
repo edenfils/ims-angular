@@ -4,11 +4,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
-  templateUrl: `
-    <div class="inventory-app">
-      (Products go here)
-    </div>
-  `
+  templateUrl: './app.component.html'
 })
 
 export class AppComponent {
