@@ -1,11 +1,10 @@
 export class Product {
-    constructor (
+    constructor(
             public sku: string,
             public name: string,
             public imgUrl: string,
             public department: string[],
             public price: number ) {
-        
 
     }
 }
