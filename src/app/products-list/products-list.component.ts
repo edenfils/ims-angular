@@ -25,7 +25,7 @@ export class ProductsListComponent implements OnInit {
      this.onProductSelected.emit(product);
    }
 
-   isSelectd(product: Product): boolean {
+   isSelected(product: Product): boolean {
      if (!product || !this.currentProduct) {
        return false;
      }
