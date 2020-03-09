@@ -14,6 +14,7 @@ import { NgStyleComponent } from './ng-style/ng-style.component';
 import { NgClassComponent } from './ng-class/ng-class.component';
 import { NgForComponent } from './ng-for/ng-for.component';
 import { DemoFormSkuComponent } from './demo-form-sku/demo-form-sku.component';
+import { DemoFormValidationComponent } from './demo-form-validation/demo-form-validation.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DemoFormSkuComponent } from './demo-form-sku/demo-form-sku.component';
     NgStyleComponent,
     NgClassComponent,
     NgForComponent,
-    DemoFormSkuComponent
+    DemoFormSkuComponent,
+    DemoFormValidationComponent
   ],
   imports: [
     BrowserModule,
