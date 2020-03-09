@@ -1,0 +1,17 @@
+<div class="ui input">
+    <input type="text" placeholder="color" name="color" value="{{ color }}" #colorinput>
+</div>
+
+<div class="ui input">
+    <input type="text" placeholder="font size" name="fontSize" value="{{ fontSize}}" #fontinput>
+</div>
+
+<button class="ui primary button" (click)="apply(colorinput.value, fontinput.value)">
+    Apply Settings
+</button>
+
+<div>
+    <span [ngStyle]="{color: color}" [style.font-size.px]="fontSize">
+        Red text
+    </span>
+</div>
