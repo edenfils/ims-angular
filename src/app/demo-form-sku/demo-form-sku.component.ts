@@ -17,16 +17,15 @@ function skuValidator(control: FormControl): { [s: string] : boolean } {
 })
 export class DemoFormSkuComponent implements OnInit {
   myForm: FormGroup;
-  sku: AbstractControl;
+  productName: string;
 
   constructor(fb: FormBuilder) {
     this.myForm =  fb.group({
-      'sku': ['', Validators.compose([
-        Validators.required, skuValidator
-      ])]
+      'productName': ['', Validators.required]
     });
 
-    this.sku = this.myForm.controls['sku'];
+    this.productName = 'ng-book: The Complete Guide to Angular';
+    
   }
 
   ngOnInit() {
